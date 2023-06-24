@@ -24,8 +24,8 @@
             <img src="images/logo.png" alt="Loading" width="125px" />
           </div>
           <nav>
-            <ul>
-              <li></li>
+            <ul id="menuItems">
+              
               <li><a href="">HOME</a></li>
               <li><a href="">PRODUCTS</a></li>
               <li><a href="">ABOUT</a></li>
@@ -38,6 +38,7 @@
             width="30px"
             height="30px"
           />
+          <img src="images/menu.png" alt="Loading.." class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
           <div class="col-2">
@@ -165,32 +166,105 @@
     </div>
     <!----------testimonial-->
     <div class="testimonial">
+      <h2 class="title">Testimonials</h2>
       <div class="small-container">
         <div class="row">
+
           <div class="col-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Voluptatum minus libero deleniti blanditiis temporibus pariatur 
-               veritatis numquam et quibusdam vel voluptate saepe dolores eligendi, 
-              illo ab! Quis perspiciatis repellendus facilis.</p>
               <img src="images/user-1.png" alt="loading">
               <h3>Sean Parker</h3>
           </div>
           <div class="col-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Voluptatum minus libero deleniti blanditiis temporibus pariatur 
-               veritatis numquam et quibusdam vel voluptate saepe dolores eligendi, 
-              illo ab! Quis perspiciatis repellendus facilis.</p>
               <img src="images/user-2.png" alt="loading">
               <h3>John</h3>
         </div>
         <div class="col-3">
-            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Voluptatum minus libero deleniti blanditiis temporibus pariatur 
-               veritatis numquam et quibusdam vel voluptate saepe dolores eligendi, 
-              illo ab! Quis perspiciatis repellendus facilis."</p>
               <img src="images/user-3.png" alt="loading">
               <h3> Danerys</h3>
       </div>
     </div>
+    <!-- ------------------------brands-------------------- -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-godrej.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="images/logo-oppo.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="images/logo-coca-cola.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="images/logo-paypal.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="images/logo-philips.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Footer----------- -->
+    <div class="footer">
+      <div class="conatainer">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Dowload our App</h3>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="">
+              <img src="images/app-store.png" alt="">
+            </div>
+            <p>Download App for Android and ios mobile phone</p>
+
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="Loading..">
+            <p>our purpose is to sustainbly make the pleasure ans benefits of spots
+               Accessible to the many</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usefil Links</h3>
+            <ul>
+
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return</li>
+              <li>Join Affiliate</li>
+            </ul>
+
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - by Rohit Yadav</p>
+      </div>
+    </div>
+    <!-- js for toggle menuj -->
+    <script>
+      var menuItems=document.getElementById("MenuItems");
+      MenuItems.style.maxHeight="0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight="0px";
+        }
+      }
+    </script>
   </body>
 </html>
